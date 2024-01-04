@@ -122,7 +122,7 @@ class ImaGen:
             retrieve_req = requests.get(f'https://aihorde.net/api/v2/generate/status/{self.req_id}')
             if not retrieve_req.ok:
                 print(retrieve_req.text)
-                return
+                return None
 
             results_json = retrieve_req.json()
             results = results_json['generations']        
@@ -134,8 +134,7 @@ class ImaGen:
 
                 save_image(image_link, final_filename)
 
-
-    
+            return results
 
 
 
