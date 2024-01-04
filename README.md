@@ -1,10 +1,10 @@
 ## ImaGen Class
-The ImaGen class is a Python implementation designed to interact with the ImaGen API for generating images. It provides functionalities to submit image generation requests, check the status of the requests, and retrieve the generated images. Below is an overview of the key features and usage of the ImaGen class.
+The ImaGen class is a Python implementation designed to interact with the stable horde API for generating images. It provides functionalities to submit image generation requests, check the status of the requests, and retrieve the generated images. Below is an overview of the key features and usage of the ImaGen class.
 
 ## Features:
 Image Generation:
 
-Submits image generation requests to the ImaGen API.
+Submits image generation requests to the stable horde API.
 Allows customization of various parameters such as prompt, image dimensions, number of steps, and more.
 Request Status Checking:
 
@@ -37,11 +37,11 @@ if __name__ == "__main__":
 ## Dependencies:
 The class utilizes the requests library for making HTTP requests.
 ListModels Function
-The ListModels function is a utility function designed to retrieve a list of available image models from the ImaGen API. It provides a simple way to fetch and display the available models.
+The ListModels function is a utility function designed to retrieve a list of available image models from thestable horden API. It provides a simple way to fetch and display the available models.
 
 ## Model Listing Feature:
 
-Sends a GET request to the ImaGen API to fetch information about available image models.
+Sends a GET request to the stable horde API to fetch information about available image models.
 Extracts and returns a list of model names.
 
 Usage Example:
