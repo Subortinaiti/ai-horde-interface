@@ -145,7 +145,7 @@ if __name__ == "__main__":
     gen = ImaGen()
 
     print("sending generation request...")
-    reqid = gen.generate(prompt="Adolf Hitler",n=1)
+    reqid = gen.generate(prompt="None",n=1)
 
     print(f"generation request sent! (id:{reqid})")
     done = False
