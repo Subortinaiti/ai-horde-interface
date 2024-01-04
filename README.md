@@ -17,21 +17,21 @@ Supports saving multiple images with customizable filenames and paths.
 Usage Example:
 
 
-if __name__ == "__main__":
-    gen = ImaGen()
-
-    print("Sending generation request...")
-    reqid = gen.generate(prompt="a white square on a black background", n=1)
-
-    print(f"Generation request sent! (id: {reqid})")
-    done = False
-    while not done:
-        status = gen.status()
-        print(status)
-        if status["done"]:
-            done = True
-    gen.extract_done("generated_image", "output_path")
-    print("Done!")
+    if __name__ == "__main__":
+        gen = ImaGen()
+    
+        print("Sending generation request...")
+        reqid = gen.generate(prompt="a white square on a black background", n=1)
+    
+        print(f"Generation request sent! (id: {reqid})")
+        done = False
+        while not done:
+            status = gen.status()
+            print(status)
+            if status["done"]:
+                done = True
+        gen.extract_done("generated_image", "output_path")
+        print("Done!")
 
     
 ## Dependencies:
@@ -47,8 +47,8 @@ Extracts and returns a list of model names.
 Usage Example:
 
 
-models = ListModels()
-print("Available Image Models:")
-for model in models:
-    print(model)
+    models = ListModels()
+    print("Available Image Models:")
+    for model in models:
+        print(model)
 
